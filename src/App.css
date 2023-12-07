@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+.neighborhood-map {
+  width: 100%; /* Adjust the width as needed */
+  max-width: 800px; /* Set a maximum width to maintain image quality */
+  /* Add any additional styling here */
+}
