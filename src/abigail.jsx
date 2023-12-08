@@ -1,5 +1,5 @@
 // Define the Cat object with initial attributes
-const Cat = {
+export const Cat = {
     name: 'Abigail',
     friendliness: 'neutral', // 'friendly', 'reserved', etc.
     preferredInteractions: ['petting', 'treats', 'playing'],
@@ -83,3 +83,4 @@ const Cat = {
   Cat.interact('treats'); // Simulate offering treats to Abigail
   Cat.interact('playing'); // Simulate playing with Abigail
   
+
