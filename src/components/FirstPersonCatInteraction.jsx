@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import { handlePetting, handleTreats, handlePlaying } from '../utils/interactionHelpers';
 import { Cats } from '../data/cats/cats'; // Import the cat object
+import { useSelector } from 'react-redux';
+import { selectCatById } from '../features/cats/catsSlice';
 
-const FirstPersonCatInteraction = ( placeInArray ) => {
+const FirstPersonCatInteraction = () => {
   const [interactionMessage, setInteractionMessage] = useState('');
-  const cat = Cats[placeInArray];
+  
+  const cat = useSelector(selectCatById(catId));
 
   const handlePettingAction = () => {
     handlePetting(cat); // Pass the cat object to the interaction function
