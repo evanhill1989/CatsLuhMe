@@ -11,6 +11,7 @@ const catsSlice = createSlice({
     },
     reducers: {
       selectCat(state, action) {
+        console.log('Is the reducer even running');
         state.selectedCat = state.catsArray.find(cat => cat.name === action.payload); // Set the selected cat
       },
     },

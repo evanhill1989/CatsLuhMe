@@ -14,9 +14,9 @@ const FictionalNeighborhoodMap = () => {
   
     const clickedCat = event.target.parentElement.parentElement.id;
     const otherClickedCat= "Luna";
-    console.log(CATS[0].name);
+ 
     console.log(clickedCat); // this is the name of the cat that was clicked on
-    console.log(otherClickedCat);
+   
 
     dispatch(selectCat(clickedCat));
 
