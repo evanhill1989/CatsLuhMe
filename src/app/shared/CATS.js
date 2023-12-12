@@ -1,4 +1,4 @@
-export const Cats = [
+export const CATS = [
     {
       name: 'Abigail',
       friendliness: 'friendly',
@@ -26,3 +26,28 @@ export const Cats = [
     },
     // Add more cats as needed
   ];
+
+//   export const selectAllCats = (state) => {
+//     return state.cats.catsArray;
+// };
+
+// export const selectCatByName = (name) => (state) => {
+//     return state.cat.catsArray.find(
+//         (cat) => cat.name === parseInt(name)
+//     );
+// };
+
+// export const selectFeaturedCat = (state) => {
+//     return state.cats.catsArray.find((cat) => cat.featured);
+// };
+
+ // const handleTreatsAction = () => {
+  //   handleTreats(cat);
+  //   setInteractionMessage('Offering treats to Abigail...');
+  // };
+
+  // const handlePlayingAction = () => {
+    
+  //   handlePlaying(cat); 
+  //   setInteractionMessage('Playing with Abigail...');
+  // };
